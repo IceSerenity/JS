@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="scrFunctions.js"></script>
+</head>
+<body>
+
+<!---Событие onclick--->
+<input  type="button" onclick="alert ('Click!')" value="Click me"/>
+<br><br>
+<!---Вызываем функцию по нажатию на кнопку---->
+<input  type="button" onclick="counter()" value="Counter">
+<br><br>
+<!-----вызываем функцию по нажатию, которую мы находим по ID-------->
+<input id="elem" type="button" value="Click me"/>
+
+<button onclick="alert(this.innerHTML)">Some</button>
+<br><br>
+<button onclick="return this.style.border = '3px solid blue'">Change</button>
+<!----Вешаем на кнопку событие и удаляем его-------->
+<button id="btn">Button</button>
+<br><br>
+</body>
+</html>
